@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Isogolf</title>
+        <link rel="stylesheet" type="text/css" href="css/isogolf.css">
+    </head>
+    <body>
+        <canvas id="gameCanvas" width="600" height="600" style="float: left"></canvas>
+        <div style="float: left; width: 300px">
+            <div style="width: 100%; float: left">
+                <div class="button_heading">Selection</div>
+                <div class="button inactive" id="button_selection_nodes">Nodes</div>
+                <div class="button inactive" id="button_selection_edges">Edges</div>
+                <div class="button inactive" id="button_selection_tris">Triangles</div>
+            </div>
+            <div style="width: 100%; float: left">
+                <div class="button_heading">Display</div>
+                <div class="button inactive" id="button_display_nodes">Nodes</div>
+                <div class="button inactive" id="button_display_edges">Edges</div>
+                <div class="button inactive" id="button_display_tris">Triangles</div>
+            </div>
+            
+            <div style="width: 100%; float: left">
+                <div class="button_heading">Movement</div>
+                <div style="float: left">Selection Only - Area</div>
+                <input type="range" id="slider_movement" min="0" max="1" step="0.05" value="0.5" style="float: left">
+            </div>
+            
+            <div style="width: 100%; float: left">
+                <div class="button_heading">Sloping</div>
+                <div style="float: left">Relative - Blend</div>
+                <input type="range" id="slider_movement" min="0" max="1" step="0.05" value="0.5" style="float: left">
+            </div>
+            <div style="width: 100%; float: left">
+                <div class="button inactive" id="button_export_hole">Export Hole</div>
+                <div id="export_output"/>
+            </div>
+            <div style="width: 100%; float: left">
+                <div class="button inactive" id="button_import_hole">Import Hole</div>
+                <textarea id="import_text"></textarea>
+            </div>
+        </div>
+        <script data-main="js/main" src="js/includes/require.js"></script>
+    </body>
+</html>

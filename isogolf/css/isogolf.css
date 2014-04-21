@@ -1,0 +1,26 @@
+.active {
+    background-color: lime;
+}
+
+.inactive {
+    background-color: gray;
+}
+
+.active :hover {
+    background-color: yellow;
+}
+
+.inactive :hover {
+    background-color: yellow;
+}
+
+.button {
+    float: left;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.button_heading {
+    padding: 5px;
+    font-size: 1.3em;
+}
